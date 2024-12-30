@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Countdown -->
+    <div id="countdown-container">
+        <h1 id="heading">10 Seconds to a Wonderful Year</h1>
+        <p id="countdown">10</p>
+    </div>
+    
+    <!-- Fireworks Container -->
+    <div id="fireworks-container"></div>
+
+    <!-- Celebration Message -->
+    <div id="celebration-message" class="hidden">
+        <h3>🎉 Happy New Year Nan❤️ I love y❤️u 🎉</h3>
+    </div>
+<!-- Add this container for the images -->
+<div id="image-container" class="hidden"></div>
+<!-- Question container -->
+<div id="question-container" class="hidden">
+    <h2>Do you want to spend every year with me?</h2>
+    <button id="yes-button">Yes</button>
+    <button id="no-button">No</button>
+</div>
+
+
+    <!-- Button to play music -->
+    <button id="unwrap-present-button" class="unwrap-present">
+        Unwrap the Present 🎁
+    </button>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="Song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

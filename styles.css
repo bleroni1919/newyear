@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+#countdown-container {
+    text-align: center;
+}
+
+#heading {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#countdown {
+    font-size: 5rem;
+    margin-top: 1rem;
+    animation: colorChange 1s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: green; }
+    100% { color: blue; }
+}
+
+/* Fireworks Container */
+#fireworks-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#celebration-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: gold;
+    font-size: 4rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Button Styles for Present Look */
+.unwrap-present {
+    background-color: #ff5e5e;
+    border: none;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 50px;
+    animation: bounce 1s infinite;
+}
+
+.unwrap-present:hover {
+    background-color: #ff3e3e;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+#heading, #countdown {
+    display: none;
+}
+/* Hidden elements */
+.hidden {
+    display: none;
+}
+
+/* Image container */
+#image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Animated images */
+.image {
+    position: absolute;
+    max-width: 80%;
+    max-height: 80%;
+    opacity: 0;
+    animation: fadeInOut 4s ease-in-out forwards; /* Changed from 2s to 4s */
+}
+
+/* Fade-in-out animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1; /* Fade in */
+    }
+    75% {
+        opacity: 1; /* Hold visible */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+    }
+}
+
+/* Question Container */
+#question-container {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Fancy Buttons */
+#question-container button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+#question-container button:hover {
+    background-color: #4cae4c;
+    transform: scale
+
+
+}
